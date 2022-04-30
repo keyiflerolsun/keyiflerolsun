@@ -1,0 +1,38 @@
+# Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
+
+name: Otomatik Profil Güncelleyici
+
+on:
+  schedule:
+    - cron: '00 00 * * *'
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Python 3.10.4 Yükle
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10.4"
+
+      - name: Gereksinimleri Yükle
+        run: |
+          python -m pip install --upgrade pip
+          pip install -Ur requirements.txt
+
+      - name: Betiği Çalıştır
+        run: |
+          python olustur.py
+
+      - uses: mikeal/publish-to-github-action@master
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      BRANCH_NAME: "master"
