@@ -69,5 +69,5 @@
 
 
 
-Son Güncelleme: 23-07-2022 03:20:40
+Son Güncelleme: 24-07-2022 03:23:16
 </details>
