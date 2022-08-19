@@ -54,7 +54,7 @@ class ReadmeGenerator:
         dosya.extend(self.__tablo_olustur(kartlar=kartlar))
 
         if self.rozet:
-            dosya.append(f"\n\n[![Otomatik Profil Güncelleyici](https://github.com/{self.kullanici_adi}/{self.kullanici_adi}/actions/workflows/basla.yml/badge.svg)](https://github.com/{self.kullanici_adi}/{self.kullanici_adi}/actions/workflows/basla.yml)\n")
+            dosya.append(f"\n\n[![Otomatik Profil Güncelleyici](https://github.com/{self.kullanici_adi}/{self.kullanici_adi}/actions/workflows/keyiflerolsun.yml/badge.svg)](https://github.com/{self.kullanici_adi}/{self.kullanici_adi}/actions/workflows/keyiflerolsun.yml)\n")
 
         if self.zaman_damgasi:
             dosya.append("\n\n\n")
