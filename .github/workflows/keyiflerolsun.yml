@@ -2,12 +2,18 @@
 
 name: Otomatik Profil Güncelleyici
 
+env:
+  BRANCH_NAME: "main"
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 on:
   schedule:
     - cron: '00 00 * * *'
+
   push:
     branches:
       - "main"
+
   pull_request:
     branches:
       - "main"
@@ -40,6 +46,3 @@ jobs:
           python olustur.py
 
       - uses: mikeal/publish-to-github-action@master
-
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
