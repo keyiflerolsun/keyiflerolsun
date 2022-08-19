@@ -6,21 +6,29 @@ on:
   schedule:
     - cron: '00 00 * * *'
   push:
-    branches: [master]
+    branches:
+      - "main"
   pull_request:
-    branches: [master]
+    branches:
+      - "main"
 
 jobs:
-  build:
+  keyiflerolsun:
     runs-on: ubuntu-latest
-    permissions: write-all
-    steps:
-      - uses: actions/checkout@v2
 
-      - name: Python 3.10.4 Yükle
+    permissions: write-all
+
+    steps:
+      - name: Depo Kontrolü
+        uses: actions/checkout@v2
+
+      - name: Python 3.10.6 Yükle
         uses: actions/setup-python@v2
         with:
-          python-version: "3.10.4"
+          python-version: "3.10.6"
+
+      - name: Python Sürümünü Göster
+        run: python -c "import sys; print(sys.version)"
 
       - name: Gereksinimleri Yükle
         run: |
@@ -35,4 +43,3 @@ jobs:
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      BRANCH_NAME: "master"
