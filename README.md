@@ -4,6 +4,7 @@
   <p align="center">
     <a href="https://github.com/keyiflerolsun"><img src="https://visitor-badge.laobi.icu/badge?page_id=keyiflerolsun&left_text=Ziyaret%C3%A7i%20Say%C4%B1s%C4%B1" alt="Ziyaret"></a>
     <a href="https://KekikAkademi.org/Kahve" target="_blank"><img src="https://img.shields.io/badge/%E2%98%95%EF%B8%8F-Kahve%20Ismarla-ffdd00" title="☕️"></a>
+    <a rel="me" href="https://masto.ai/@keyiflerolsun">Mastodon</a>
   </p>
 
 ---
