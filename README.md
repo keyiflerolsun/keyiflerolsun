@@ -55,6 +55,7 @@
   </details>
 </samp>
 
+
   ---
 
 
@@ -70,5 +71,5 @@
 
 
 
-Son Güncelleme: 28-11-2022 15:31:26
+Son Güncelleme: 28-11-2022 15:36:33
 </details>
