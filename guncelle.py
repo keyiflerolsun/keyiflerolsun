@@ -11,7 +11,7 @@ class ReadmeGenerator:
         self.rozet                = rozet
         self.repolar              = [
             repo for repo in self.api.repos.list_for_user(username=self.kullanici_adi, per_page=100, sort="pushed")
-                if repo.get("homepage") and repo.get("stargazers_count") > 3
+                if repo.get("homepage") and repo.get("stargazers_count") >= 3
         ]
 
         if self.yildiza_gore_listele:
