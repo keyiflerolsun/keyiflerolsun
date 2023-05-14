@@ -3,7 +3,6 @@
 name: Otomatik Profil Güncelleyici
 
 env:
-  BRANCH_NAME: "master"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 on:
@@ -26,12 +25,12 @@ jobs:
 
     steps:
       - name: Depo Kontrolü
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: Python 3.10.6 Yükle
-        uses: actions/setup-python@v2
+      - name: Python 3.10.8 Yükle
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.10.6"
+          python-version: "3.10.8"
 
       - name: Python Sürümünü Göster
         run: python -c "import sys; print(sys.version)"
@@ -43,6 +42,13 @@ jobs:
 
       - name: Betiği Çalıştır
         run: |
-          python olustur.py
+          python basla.py
 
-      - uses: mikeal/publish-to-github-action@master
+      - name: Depoyu Güncelle
+        run: |
+          git config --global user.name "keyiflerolsun"
+          git config --global user.email "keyiflerolsun@gmail.com"
+          git add -A
+          zaman=$(date "+%d-%m-%Y %H:%M:%S | TSİ")
+          git commit -m "🕰 Otomatik Paylaşım » $zaman" -m "💾 Önceki » $GITHUB_SHA"
+          git push

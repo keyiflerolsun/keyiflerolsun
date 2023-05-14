@@ -1,6 +1,6 @@
 from ghapi.all import GhApi
-from datetime import datetime
-from pytz import timezone
+from datetime  import datetime
+from pytz      import timezone
 
 class ReadmeGenerator:
     def __init__(self, kullanici_adi:str, yildiza_gore_listele:bool=False, zaman_damgasi:bool=False, rozet:bool=False):
