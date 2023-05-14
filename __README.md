@@ -34,9 +34,6 @@
     <a href="https://tr.linkedin.com/in/keyiflerolsun" target="_blank">
       <img alt="iletisim | Linkedin" src="https://img.shields.io/badge/linkedin-2B2A29.svg?style=for-the-badge&logo=linkedin&logoColor=EF7F1A">
     </a>
-    <a href="https://masto.ai/@keyiflerolsun"          target="_blank">
-      <img alt="iletisim | Mastodon"  src="https://img.shields.io/badge/mastodon-2B2A29.svg?style=for-the-badge&logo=mastodon&logoColor=EF7F1A">
-    </a>
   </div>
 
   ---

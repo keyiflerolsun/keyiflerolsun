@@ -9,16 +9,19 @@ class ReadmeGenerator:
         self.yildiza_gore_listele = yildiza_gore_listele
         self.zaman_damgasi        = zaman_damgasi
         self.rozet                = rozet
-        self.repolar              = [repo for repo in self.api.repos.list_for_user(username=self.kullanici_adi, per_page=100, sort="pushed") if not repo["fork"]]
+        self.repolar              = [
+            repo for repo in self.api.repos.list_for_user(username=self.kullanici_adi, per_page=100, sort="pushed")
+                if repo.get("homepage") and repo.get("stargazers_count") > 3
+        ]
 
         if self.yildiza_gore_listele:
-            self.repolar = sorted(self.repolar, key=lambda veri: veri['stargazers_count'], reverse=True) 
+            self.repolar = sorted(self.repolar, key=lambda veri: veri["stargazers_count"], reverse=True) 
 
         self.readme_olustur(kartlar=True)
 
     def github_api(self):
         # https://ghapi.fast.ai/fullapi.html
-        # github_token = os.environ['GITHUB_TOKEN']
+        # github_token = os.environ["GITHUB_TOKEN"]
         # api = GhApi(token=github_token)
         api = GhApi()
         return api
@@ -33,7 +36,7 @@ class ReadmeGenerator:
             ))
 
         for repo in self.repolar:
-            if repo['name'].lower().startswith("keyiflerolsun"):
+            if repo["name"].lower().startswith("keyiflerolsun"):
                 continue
 
             if kartlar:
@@ -58,24 +61,24 @@ class ReadmeGenerator:
 
         if self.zaman_damgasi:
             dosya.append("\n\n\n")
-            dosya.append(f'Son Güncelleme: {datetime.now(timezone("Turkey")).strftime("%d-%m-%Y %X")}\n')
+            dosya.append(f"Son Güncelleme: {datetime.now(timezone('Turkey')).strftime('%d-%m-%Y %X')}\n")
 
-        dosya.append('</details>')
+        dosya.append("</details>")
 
-        with open(dosya_yolu, "w") as _dosya:
+        with open(dosya_yolu, "w", encoding="utf-8") as _dosya:
             _dosya.writelines(dosya)
 
     def readme_olustur(self, mevcut_dosya="__README.md", cikti_dosyasi="README.md", kartlar=False):
-        with open(mevcut_dosya) as _dosya:
+        with open(mevcut_dosya, encoding="utf-8") as _dosya:
             readme = _dosya.readlines()
 
         self.__readme_olustur(readme, cikti_dosyasi, kartlar)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ReadmeGenerator(
         kullanici_adi        = "keyiflerolsun",
         yildiza_gore_listele = True, 
         zaman_damgasi        = True, 
-        rozet                = True,
+        rozet                = True
     )
