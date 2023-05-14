@@ -42,7 +42,7 @@ jobs:
 
       - name: Betiği Çalıştır
         run: |
-          python basla.py
+          python olustur.py
 
       - name: Depoyu Güncelle
         run: |
