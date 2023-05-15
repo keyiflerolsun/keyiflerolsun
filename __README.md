@@ -17,19 +17,20 @@
   
   ![Manjaro](https://img.shields.io/badge/manjaro-cD1?style=for-the-badge&logo=manjaro&logoColor=EF7F1A&color=2B2A29)
   ![Python](https://img.shields.io/badge/python-cD1?style=for-the-badge&logo=python&logoColor=EF7F1A&color=2B2A29)
-  ![Telegram](https://img.shields.io/badge/Telegram-cD1?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lPSJMYXllciAxIiBpZD0iTGF5ZXJfMSIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCk7fTwvc3R5bGU+PGxpbmVhckdyYWRpZW50IGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0ibGluZWFyLWdyYWRpZW50IiB4Mj0iNTAyLjY5NyIgeTE9IjUxMiIgeTI9IjkuMzAzIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNFRjdGMUEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNFRjdGMUEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48dGl0bGUvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTI1NiwwQzExNC42MTUsMCwwLDExNC42MTUsMCwyNTZTMTE0LjYxNSw1MTIsMjU2LDUxMiw1MTIsMzk3LjM4NSw1MTIsMjU2LDM5Ny4zODUsMCwyNTYsMFpNMzg5LjA1OSwxNjEuOTM2LDM0My41OTEsMzc5YTE2LjAwNywxNi4wMDcsMCwwLDEtMjUuMTc3LDkuNTkzbC02Ni4xMzYtNDguODYxLTQwLjA2OCwzNy44YTUuNDI5LDUuNDI5LDAsMCwxLTcuNzQtLjI5NGwtLjg2MS0uOTQ2LDYuOTYyLTY3LjM3NUwzMzYuMDU1LDE5NC4yNjZhMy4zNTgsMy4zNTgsMCwwLDAtNC4wNjEtNS4zMTdMMTcxLjUxNSwyOTAuNTE5LDEwMi40LDI2Ny4zMDdhOS4zOTMsOS4zOTMsMCwwLDEtLjMyLTE3LjY5NEwzNzIuNSwxNDcuNzQ0QTEyLjQ0MSwxMi40NDEsMCwwLDEsMzg5LjA1OSwxNjEuOTM2WiIvPjwvc3ZnPg==&logoColor=EF7F1A&color=2B2A29)
-  ![Web3](https://img.shields.io/badge/Web3-cD1?style=for-the-badge&logo=web3dotjs&logoColor=EF7F1A&color=2B2A29)
+  ![Telegram](https://img.shields.io/badge/Telegram-cD1?style=for-the-badge&logo=telegram&logoColor=EF7F1A&color=2B2A29)
   ![Flask](https://img.shields.io/badge/flask-cD1?style=for-the-badge&logo=flask&logoColor=EF7F1A&color=2B2A29)
-  ![Scrapy](https://img.shields.io/badge/scrapy-cD1?style=for-the-badge&logo=scrapy&logoColor=EF7F1A&color=2B2A29)
+  ![Docker](https://img.shields.io/badge/docker-cD1?style=for-the-badge&logo=docker&logoColor=EF7F1A&color=2B2A29)
   ![MongoDB](https://img.shields.io/badge/mongodb-cD1?style=for-the-badge&logo=mongodb&logoColor=EF7F1A&color=2B2A29)
   ![RESTful](https://img.shields.io/badge/restful-cD1?style=for-the-badge&logo=postman&logoColor=EF7F1A&color=2B2A29)
+  ![CloudFlare](https://img.shields.io/badge/cloudflare-cD1?style=for-the-badge&logo=cloudflare&logoColor=EF7F1A&color=2B2A29)
+  ![Web3](https://img.shields.io/badge/Web3-cD1?style=for-the-badge&logo=web3dotjs&logoColor=EF7F1A&color=2B2A29)
   </details>
 
   <h2 align="center" style="color:#EF7F1A;text-shadow: 3px 4px 4px #2B2A29"> İletişim: </h2>
 
   <div align="center">
     <a href="https://t.me/keyiflerolsunDev"            target="_blank">
-      <img alt="iletisim | Telegram" src="https://img.shields.io/badge/Telegram-cD1?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lPSJMYXllciAxIiBpZD0iTGF5ZXJfMSIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCk7fTwvc3R5bGU+PGxpbmVhckdyYWRpZW50IGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0ibGluZWFyLWdyYWRpZW50IiB4Mj0iNTAyLjY5NyIgeTE9IjUxMiIgeTI9IjkuMzAzIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNFRjdGMUEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNFRjdGMUEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48dGl0bGUvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTI1NiwwQzExNC42MTUsMCwwLDExNC42MTUsMCwyNTZTMTE0LjYxNSw1MTIsMjU2LDUxMiw1MTIsMzk3LjM4NSw1MTIsMjU2LDM5Ny4zODUsMCwyNTYsMFpNMzg5LjA1OSwxNjEuOTM2LDM0My41OTEsMzc5YTE2LjAwNywxNi4wMDcsMCwwLDEtMjUuMTc3LDkuNTkzbC02Ni4xMzYtNDguODYxLTQwLjA2OCwzNy44YTUuNDI5LDUuNDI5LDAsMCwxLTcuNzQtLjI5NGwtLjg2MS0uOTQ2LDYuOTYyLTY3LjM3NUwzMzYuMDU1LDE5NC4yNjZhMy4zNTgsMy4zNTgsMCwwLDAtNC4wNjEtNS4zMTdMMTcxLjUxNSwyOTAuNTE5LDEwMi40LDI2Ny4zMDdhOS4zOTMsOS4zOTMsMCwwLDEtLjMyLTE3LjY5NEwzNzIuNSwxNDcuNzQ0QTEyLjQ0MSwxMi40NDEsMCwwLDEsMzg5LjA1OSwxNjEuOTM2WiIvPjwvc3ZnPg==&logoColor=EF7F1A&color=2B2A29">
+      <img alt="iletisim | Telegram" src="https://img.shields.io/badge/Telegram-cD1?style=for-the-badge&logo=telegram&logoColor=EF7F1A&color=2B2A29">
     </a>
     <a href="https://tr.linkedin.com/in/keyiflerolsun" target="_blank">
       <img alt="iletisim | Linkedin" src="https://img.shields.io/badge/linkedin-2B2A29.svg?style=for-the-badge&logo=linkedin&logoColor=EF7F1A">
