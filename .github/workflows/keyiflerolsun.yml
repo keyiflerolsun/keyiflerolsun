@@ -60,7 +60,7 @@ jobs:
 
           zaman=$(TZ=":Europe/Istanbul" date "+%d-%m-%Y %H:%M:%S | TSİ")
 
-          git commit -c --author "keyiflerolsun <keyiflerolsun@users.noreply.github.com>" \
-            -m "🕰 Otomatik Paylaşım » $zaman" -m "💾 Önceki » $GITHUB_SHA"
+          git -c --author "keyiflerolsun <keyiflerolsun@users.noreply.github.com>" \
+            commit -m "🕰 Otomatik Paylaşım » $zaman" -m "💾 Önceki » $GITHUB_SHA"
 
           git push
