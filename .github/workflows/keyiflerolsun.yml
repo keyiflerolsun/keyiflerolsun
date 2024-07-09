@@ -13,6 +13,7 @@ on:
   push:
     paths:
       - guncelle.py
+      - .github/workflows/keyiflerolsun.yml
 
 jobs:
   keyiflerolsun:
