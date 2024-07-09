@@ -18,6 +18,9 @@ jobs:
   keyiflerolsun:
     runs-on: ubuntu-latest
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     permissions:
       contents: write
 
@@ -49,7 +52,10 @@ jobs:
 
       - name : Depoyu Güncelle
         if   : steps.degisiklik_kontrol.outputs.degisiklik == 'true'
-        uses : stefanzweifel/git-auto-commit-action@v5
-        with :
-          commit_author  : keyiflerolsun <keyiflerolsun@users.noreply.github.com>
-          commit_message : 🕰 Otomatik Paylaşım » $(TZ="Europe/Istanbul" date "+%d-%m-%Y %H:%M:%S | TSİ") 💾 Önceki » $GITHUB_SHA
+        run  : |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "keyiflerolsun@users.noreply.github.com"
+          git add -A
+          zaman=$(TZ=":Europe/Istanbul" date "+%d-%m-%Y %H:%M:%S | TSİ")
+          git commit -m "🕰 Otomatik Paylaşım » $zaman" -m "💾 Önceki » $GITHUB_SHA"
+          git push
