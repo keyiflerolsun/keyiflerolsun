@@ -57,7 +57,7 @@ jobs:
           zaman=$(TZ=":Europe/Istanbul" date "+%d-%m-%Y %H:%M:%S | TSİ")
 
           git config user.name "github-actions[bot]"
-          git config user.email "keyiflerolsun+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit --author="keyiflerolsun <keyiflerolsun@users.noreply.github.com>" \
             -m "🕰 Otomatik Paylaşım » $zaman" -m "💾 Önceki » $GITHUB_SHA"
