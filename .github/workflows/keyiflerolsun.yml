@@ -2,35 +2,33 @@
 
 name: Otomatik Profil Güncelleyici
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
 
-on:
+on: 
+  workflow_dispatch:
   schedule:
-    - cron: "00 00 * * *"
-
+    - cron: 00 00 * * *
   push:
-    branches:
-      - "master"
-
-  pull_request:
-    branches:
-      - "master"
+    paths:
+      - guncelle.py
 
 jobs:
   keyiflerolsun:
     runs-on: ubuntu-latest
 
-    permissions: write-all
+    permissions:
+      contents: write
 
     steps:
       - name : Depo Kontrolü
-        uses : actions/checkout@v3
+        uses : actions/checkout@v4
 
-      - name : Python 3.10.8 Yükle
-        uses : actions/setup-python@v4
+      - name : Python 3.11.8 Yükle
+        uses : actions/setup-python@v5
         with :
-          python-version: "3.10.8"
+          python-version: 3.11.8
 
       - name : Python Sürümünü Göster
         run  : python -c "import sys; print(sys.version)"
@@ -51,10 +49,7 @@ jobs:
 
       - name : Depoyu Güncelle
         if   : steps.degisiklik_kontrol.outputs.degisiklik == 'true'
-        run  : |
-          git config --global user.name "keyiflerolsun"
-          git config --global user.email "keyiflerolsun@gmail.com"
-          git add -A
-          zaman=$(TZ=":Europe/Istanbul" date "+%d-%m-%Y %H:%M:%S | TSİ")
-          git commit -m "🕰 Otomatik Paylaşım » $zaman" -m "💾 Önceki » $GITHUB_SHA"
-          git push
+        uses : stefanzweifel/git-auto-commit-action@v5
+        with :
+          commit_author  : keyiflerolsun <keyiflerolsun@users.noreply.github.com>
+          commit_message : 🕰 Otomatik Paylaşım » $(TZ="Europe/Istanbul" date "+%d-%m-%Y %H:%M:%S | TSİ") 💾 Önceki » $GITHUB_SHA
