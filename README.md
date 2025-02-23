@@ -19,11 +19,12 @@
   ![Python](https://img.shields.io/badge/python-cD1?style=for-the-badge&logo=python&logoColor=EF7F1A&color=2B2A29)
   ![Telegram](https://img.shields.io/badge/Telegram-cD1?style=for-the-badge&logo=telegram&logoColor=EF7F1A&color=2B2A29)
   ![Flask](https://img.shields.io/badge/flask-cD1?style=for-the-badge&logo=flask&logoColor=EF7F1A&color=2B2A29)
+  ![FastAPI](https://img.shields.io/badge/fastapi-cD1?style=for-the-badge&logo=fastapi&logoColor=EF7F1A&color=2B2A29)
   ![Docker](https://img.shields.io/badge/docker-cD1?style=for-the-badge&logo=docker&logoColor=EF7F1A&color=2B2A29)
   ![MongoDB](https://img.shields.io/badge/mongodb-cD1?style=for-the-badge&logo=mongodb&logoColor=EF7F1A&color=2B2A29)
+  ![Redis](https://img.shields.io/badge/redis-cD1?style=for-the-badge&logo=redis&logoColor=EF7F1A&color=2B2A29)
   ![RESTful](https://img.shields.io/badge/restful-cD1?style=for-the-badge&logo=postman&logoColor=EF7F1A&color=2B2A29)
   ![CloudFlare](https://img.shields.io/badge/cloudflare-cD1?style=for-the-badge&logo=cloudflare&logoColor=EF7F1A&color=2B2A29)
-  ![Web3](https://img.shields.io/badge/Web3-cD1?style=for-the-badge&logo=web3dotjs&logoColor=EF7F1A&color=2B2A29)
   </details>
 
   <h2 align="center" style="color:#EF7F1A;text-shadow: 3px 4px 4px #2B2A29"> İletişim: </h2>
@@ -33,7 +34,7 @@
       <img alt="iletisim | Telegram" src="https://img.shields.io/badge/Telegram-cD1?style=for-the-badge&logo=telegram&logoColor=EF7F1A&color=2B2A29">
     </a>
     <a href="https://tr.linkedin.com/in/keyiflerolsun" target="_blank">
-      <img alt="iletisim | Linkedin" src="https://img.shields.io/badge/linkedin-2B2A29.svg?style=for-the-badge&logo=linkedin&logoColor=EF7F1A">
+      <img alt="iletisim | Linkedin" src="https://img.shields.io/badge/linkedin-2B2A29.svg?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpieD0iaHR0cHM6Ly9ib3h5LXN2Zy5jb20iPgogICAgPHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6IiBzdHlsZT0iZmlsbDogcmdiKDIzOSwgMTI3LCAyNik7Ij48L3BhdGg+Cjwvc3ZnPgo=&logoColor=EF7F1A">
     </a>
   </div>
 
@@ -68,5 +69,5 @@
 
 
 
-Son Güncelleme: 22-02-2025 03:24:56
+Son Güncelleme: 23-02-2025 03:13:09
 </details>
