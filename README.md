@@ -70,5 +70,5 @@
 
 
 
-Son Güncelleme: 27-01-2026 03:34:45
+Son Güncelleme: 28-01-2026 03:33:07
 </details>
