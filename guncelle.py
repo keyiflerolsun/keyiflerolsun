@@ -15,7 +15,7 @@ class ReadmeGenerator:
         ]
 
         if self.yildiza_gore_listele:
-            self.repolar = sorted(self.repolar, key=lambda veri: veri["stargazers_count"], reverse=True) 
+            self.repolar = sorted(self.repolar, key=lambda veri: veri["stargazers_count"], reverse=True)
 
         self.readme_olustur(kartlar=True)
 
@@ -40,8 +40,8 @@ class ReadmeGenerator:
                 continue
 
             if kartlar:
-                readme.append(f'<a href="{repo["html_url"]}" target="_blank"><img height="150px" width="45%" alt="{repo["name"]}" src="https://github-readme-stats.vercel.app/api/pin/?username={self.kullanici_adi}&repo={repo["name"]}&layout=compact&bg_color=2B2A29&text_color=FFF&title_color=EF7F1A&icon_color=EF7F1A&locale=tr"/></a> ')
-                # readme.append(f'[![{repo["name"]}](https://github-readme-stats.vercel.app/api/pin/?username={self.kullanici_adi}&repo={repo["name"]}&layout=compact&bg_color=2B2A29&text_color=FFF&title_color=EF7F1A&icon_color=EF7F1A)]({repo["html_url"]})\n')
+                readme.append(f'<a href="{repo["html_url"]}" target="_blank"><img height="150px" width="45%" alt="{repo["name"]}" src="https://github-stats-extended.vercel.app/api/pin/?username={self.kullanici_adi}&repo={repo["name"]}&layout=compact&bg_color=2B2A29&text_color=FFF&title_color=EF7F1A&icon_color=EF7F1A&locale=tr"/></a> ')
+                # readme.append(f'[![{repo["name"]}](https://github-stats-extended.vercel.app/api/pin/?username={self.kullanici_adi}&repo={repo["name"]}&layout=compact&bg_color=2B2A29&text_color=FFF&title_color=EF7F1A&icon_color=EF7F1A)]({repo["html_url"]})\n')
             else:
                 readme.append(f"| {repo['stargazers_count']} | {repo['forks_count']} | [{repo['name']}]({repo['html_url']}) | {repo['description']} |\n")
 
@@ -78,7 +78,7 @@ class ReadmeGenerator:
 if __name__ == "__main__":
     ReadmeGenerator(
         kullanici_adi        = "keyiflerolsun",
-        yildiza_gore_listele = True, 
-        zaman_damgasi        = True, 
+        yildiza_gore_listele = True,
+        zaman_damgasi        = True,
         rozet                = True
     )
