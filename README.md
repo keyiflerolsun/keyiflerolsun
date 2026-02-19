@@ -14,7 +14,7 @@
       <i>(genişletmek için tıklayın!)</i>
     </summary>
     <br/>
-  
+
   ![Cachy](https://img.shields.io/badge/cachy-cD1?style=for-the-badge&logo=linux&logoColor=EF7F1A&color=2B2A29)
   ![Python](https://img.shields.io/badge/python-cD1?style=for-the-badge&logo=python&logoColor=EF7F1A&color=2B2A29)
   ![Telegram](https://img.shields.io/badge/Telegram-cD1?style=for-the-badge&logo=telegram&logoColor=EF7F1A&color=2B2A29)
@@ -47,9 +47,9 @@
       <i>(genişletmek için tıklayın!)</i>
     </summary>
     <br/>
-  
-  <img width="53%" alt="keyiflerolsun'un GitHub İstatistikleri" src="https://github-readme-stats.vercel.app/api?username=keyiflerolsun&show_icons=true&bg_color=2B2A29&icon_color=EF7F1A&text_color=FFF&title_color=EF7F1A&locale=tr"/>
-  <img width="44%" alt="keyiflerolsun'un En Çok Kullandığı Diller" src="https://github-readme-stats.vercel.app/api/top-langs/?username=keyiflerolsun&layout=compact&bg_color=2B2A29&text_color=FFF&title_color=EF7F1A&locale=tr"/>
+
+  <img width="53%" alt="keyiflerolsun'un GitHub İstatistikleri" src="https://github-stats-extended.vercel.app/api?username=keyiflerolsun&show_icons=true&bg_color=2B2A29&icon_color=EF7F1A&text_color=FFF&title_color=EF7F1A&locale=tr"/>
+  <img width="44%" alt="keyiflerolsun'un En Çok Kullandığı Diller" src="https://github-stats-extended.vercel.app/api/top-langs/?username=keyiflerolsun&layout=compact&bg_color=2B2A29&text_color=FFF&title_color=EF7F1A&locale=tr"/>
 
   </details>
 </samp>
@@ -70,5 +70,5 @@
 
 
 
-Son Güncelleme: 19-02-2026 20:19:51
+Son Güncelleme: 19-02-2026 20:22:05
 </details>
