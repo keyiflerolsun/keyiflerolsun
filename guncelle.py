@@ -1,6 +1,16 @@
+# /// script
+# requires-python = ">=3.14.6"
+# dependencies = [
+#     "ghapi",
+#     "pytz"
+# ]
+# ///
+
+
 from ghapi.all import GhApi
 from datetime  import datetime
 from pytz      import timezone
+import inspect, asyncio
 
 class ReadmeGenerator:
     def __init__(self, kullanici_adi:str, yildiza_gore_listele:bool=False, zaman_damgasi:bool=False, rozet:bool=False):
@@ -9,15 +19,26 @@ class ReadmeGenerator:
         self.yildiza_gore_listele = yildiza_gore_listele
         self.zaman_damgasi        = zaman_damgasi
         self.rozet                = rozet
-        self.repolar              = [
-            repo for repo in self.api.repos.list_for_user(username=self.kullanici_adi, per_page=100, sort="pushed")
-                if repo.get("stargazers_count") >= 3
-        ]
+        self.repolar              = []
+
+    async def olustur(self, kartlar=True):
+        self.repolar = await self._repo_listesi_al()
 
         if self.yildiza_gore_listele:
             self.repolar = sorted(self.repolar, key=lambda veri: veri["stargazers_count"], reverse=True)
 
-        self.readme_olustur(kartlar=True)
+        await self.readme_olustur(kartlar=kartlar)
+
+    async def _repo_listesi_al(self):
+        sonuc = self.api.repos.list_for_user(username=self.kullanici_adi, per_page=100, sort="pushed")
+
+        if inspect.isawaitable(sonuc):
+            sonuc = await sonuc
+
+        return [
+            repo for repo in sonuc
+            if repo.get("stargazers_count") >= 3
+        ]
 
     def github_api(self):
         # https://ghapi.fast.ai/fullapi.html
@@ -47,7 +68,7 @@ class ReadmeGenerator:
 
         return readme
 
-    def __readme_olustur(self, dosya, dosya_yolu:str, kartlar:bool):
+    async def __readme_olustur(self, dosya, dosya_yolu:str, kartlar:bool):
         dosya.append(f"""\n\n  ---\n\n
 <details align="center">
     <summary style="font-weight: bold; font-size: 18px">
@@ -65,20 +86,29 @@ class ReadmeGenerator:
 
         dosya.append("</details>")
 
+        await asyncio.to_thread(self._dosya_yaz, dosya_yolu, dosya)
+
+    async def readme_olustur(self, mevcut_dosya="__README.md", cikti_dosyasi="README.md", kartlar=False):
+        readme = await asyncio.to_thread(self._dosya_oku, mevcut_dosya)
+        await self.__readme_olustur(readme, cikti_dosyasi, kartlar)
+
+    @staticmethod
+    def _dosya_oku(dosya_yolu):
+        with open(dosya_yolu, encoding="utf-8") as _dosya:
+            return _dosya.readlines()
+
+    @staticmethod
+    def _dosya_yaz(dosya_yolu, dosya):
         with open(dosya_yolu, "w", encoding="utf-8") as _dosya:
             _dosya.writelines(dosya)
 
-    def readme_olustur(self, mevcut_dosya="__README.md", cikti_dosyasi="README.md", kartlar=False):
-        with open(mevcut_dosya, encoding="utf-8") as _dosya:
-            readme = _dosya.readlines()
-
-        self.__readme_olustur(readme, cikti_dosyasi, kartlar)
-
 
 if __name__ == "__main__":
-    ReadmeGenerator(
-        kullanici_adi        = "keyiflerolsun",
-        yildiza_gore_listele = True,
-        zaman_damgasi        = True,
-        rozet                = True
+    asyncio.run(
+        ReadmeGenerator(
+            kullanici_adi        = "keyiflerolsun",
+            yildiza_gore_listele = True,
+            zaman_damgasi        = True,
+            rozet                = True
+        ).olustur()
     )
